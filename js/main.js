@@ -50,17 +50,29 @@ function decrement(){
     else {
         hideSign();
         
-        if(counter>=0 && counter<10) setNumber(counter);
+        if(counter>=0 && counter<10){
+            setNumber(0,true)
+            setNumber(counter);
+        }
         else splitNumbers(counter);
     }
 }
 
 function increment(){
     console.log("INCREMENT");
-    counter++;
+    if(counter < MAX) counter++;
+    else alert("Non ho implementato il conteggio maggiore di 99");
+
     if(counter<0){
-        let newCounterValue = Math.abs(counter);
-        setNumber(newCounterValue);
+        if(counter<-9){
+            let newCounterValue = Math.abs(counter);
+            splitNumbers(newCounterValue);    
+        }
+        else{
+            setNumber(0,true);
+            let newCounterValue = Math.abs(counter);
+            setNumber(newCounterValue);
+        }
     }
     else hideSign();
     
