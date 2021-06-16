@@ -31,7 +31,7 @@ function addButtons(){
 function decrement(){
 
     if(counter > MIN) counter--;
-    else alert("I have not implemented the count greater than -99");
+    else alert("I have not implemented the count less than -99");
     
     if(counter<0){
         
