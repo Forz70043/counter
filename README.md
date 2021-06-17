@@ -3,6 +3,9 @@
 
 
 Simple counter, inizialized to 0, ranging from -99 to 99
+</br></br>
+![Counter](https://github.com/Forz70043/counter/blob/master/img/counter00.png)
+
 </br>
 
 ## How It Works
