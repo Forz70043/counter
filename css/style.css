@@ -6,8 +6,12 @@
 * {
   box-sizing: border-box;
 }
+/* .col {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
 
-/* 
 button.btn.btn-outline-dark.btn-lg {
     color: var(--limeColor);
 }
@@ -75,10 +79,10 @@ button.btn.btn-outline-dark.btn-lg {
   border-bottom-width: 10px;
   border-left-color: var(--limeColor);
 }
-
+/* 
 .middle {
     
-}
+} */
 
 .middleTop {
     box-sizing: border-box;
@@ -199,6 +203,21 @@ button.btn.btn-outline-dark.btn-lg {
     }
     .number#second {
         right: 14%;
+    }
+    .row#buttons {
+        right:40%;
+    }
+}
+/*375/16 = 23.5 */
+@media (max-width: 23.5em) {
+    .number#sign {
+        left: 30%;
+    }
+    .number#first {
+        left: 61%;
+    }
+    .number#second {
+        right: 7%;
     }
     .row#buttons {
         right:40%;
